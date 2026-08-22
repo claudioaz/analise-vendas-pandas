@@ -21,3 +21,10 @@ Prática de análise e tratamento de dados de vendas utilizando Python e Pandas.
 - Agrupamento de dados
 - Merge entre DataFrames
 - Análise de faturamento e metas
+
+## 📁 Arquivos
+
+- `pandas_supremo.ipynb` — Notebook com as práticas de análise.
+- `vendas_tech.csv` — Base de dados utilizada na análise.
+- `gerentes_lojas.xlsx` — Dados dos gerentes e metas das lojas.
+- `Vendas_SP.csv` — Base contendo dados filtrados das vendas de São Paulo.
