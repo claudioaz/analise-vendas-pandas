@@ -1,14 +1,18 @@
 ---
-title: "📊 Análise de Dados de Vendas"
+title: "Análise de Dados de Vendas"
 subtitle: "Prática de análise e tratamento de dados com Python e Pandas"
 author: "Claudio"
 date: today
+date-format: long
+lang: pt-BR
 format:
   html:
     theme: cosmo
     toc: true
-    toc-title: "Conteúdo"
-    toc-location: left
+    toc-depth: 1
+    number-sections: true
+    toc-title: "Sumário"
+    toc-location: right
     code-fold: true
     code-tools: true
     code-summary: "Ver código"
@@ -20,7 +24,7 @@ execute:
   message: false
 ---
 
-# 📊 Sobre a prática
+# Sobre a prática {.unnumbered}
 
 Esta prática teve como objetivo explorar, tratar e analisar uma base de dados de vendas utilizando **Python, Pandas e NumPy**.
 
@@ -41,7 +45,7 @@ Durante a análise foram realizadas diferentes etapas de manipulação e explora
 - Análise de metas
 - Análise temporal das vendas
 
-# 📁 Dados utilizados
+# Dados utilizados {.unnumbered}
 
 Foram utilizadas duas bases de dados durante a prática.
 
@@ -59,7 +63,7 @@ Contém informações dos gerentes das lojas e suas respectivas metas mensais.
 
 A base de vendas possuía inicialmente **100.100 registros e 8 colunas**.
 
-# 🔎 1. Carregamento e exploração dos dados
+# Carregamento e exploração dos dados
 
 A primeira etapa foi realizar o carregamento das bases utilizando Pandas.
 
@@ -101,7 +105,7 @@ display(df_vendas.describe())
 
 A inspeção inicial permite compreender a estrutura da base antes de iniciar o tratamento dos dados.
 
-# 🧹 2. Tratamento dos dados
+# Tratamento dos dados
 
 Após a inspeção inicial, foram realizadas etapas de preparação dos dados para torná-los mais adequados para as análises.
 
@@ -174,11 +178,11 @@ Após o tratamento, a estrutura da base foi novamente verificada.
 df_analise.info()
 ```
 
-# ⚙️ 3. Criação de novas informações
+# Criação de novas informações
 
 Depois do tratamento, foram criadas novas colunas para facilitar as análises.
 
-## 💰 Faturamento
+## Faturamento
 
 O faturamento foi calculado multiplicando a quantidade vendida pelo preço unitário.
 
@@ -193,7 +197,7 @@ display(df_analise[
 ].head())
 ```
 
-## 🛒 Forma de venda
+## Forma de venda
 
 Foi criada uma coluna para classificar as vendas como **Online** ou **Presencial**.
 
@@ -211,7 +215,7 @@ display(
 )
 ```
 
-## 🌎 Região
+## Região
 
 Foi criado um dicionário relacionando cada loja à sua região.
 
@@ -236,7 +240,7 @@ display(
 )
 ```
 
-# 🔎 4. Consultas e filtros
+# Consultas e filtros
 
 Nesta etapa foram utilizadas diferentes formas de consultar e filtrar informações da base.
 
@@ -340,7 +344,7 @@ df_vendas_CaboHDMI_Sul = df_analise[
 display(df_vendas_CaboHDMI_Sul)
 ```
 
-# 📊 5. Análise de faturamento por loja
+# Análise de faturamento por loja
 
 Para analisar o faturamento das lojas, foi utilizado o `groupby()`.
 
@@ -386,7 +390,7 @@ grafico_lojas.plot(
 )
 ```
 
-# 🛒 6. Análise dos produtos vendidos online
+# Análise dos produtos vendidos online
 
 Primeiro foram selecionadas as vendas realizadas no canal online.
 
@@ -446,7 +450,7 @@ grafico_produtos.plot(
 )
 ```
 
-# 🏪 7. Análise de produtos por loja
+# Análise de produtos por loja
 
 Também foram realizados agrupamentos considerando loja e produto.
 
@@ -478,7 +482,7 @@ analise_lojas_em_produtos = (
 display(analise_lojas_em_produtos)
 ```
 
-# 🎯 8. Análise de metas
+# Análise de metas
 
 Uma das análises realizadas foi verificar quais lojas atingiram suas metas no mês de **janeiro de 2023**.
 
@@ -535,7 +539,7 @@ display(df_meta)
 
 Essa etapa permitiu comparar diretamente o **faturamento realizado** com a **meta mensal definida para cada loja**.
 
-# 📈 9. Evolução do faturamento ao longo do tempo
+# Evolução do faturamento ao longo do tempo
 
 Também foi realizada uma análise temporal do faturamento.
 
@@ -573,7 +577,7 @@ df_vendas_mes.plot(
 )
 ```
 
-# 📝 10. Conclusão
+# Conclusão
 
 A prática permitiu aplicar diferentes recursos do **Pandas** e do **NumPy** em uma base de dados de vendas.
 
@@ -599,7 +603,7 @@ A prática também permitiu trabalhar com diferentes formas de consulta e transf
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **Python**
 - **Pandas**
@@ -607,7 +611,7 @@ A prática também permitiu trabalhar com diferentes formas de consulta e transf
 - **Jupyter Notebook**
 - **Quarto**
 
-## 📂 Arquivos utilizados
+## Arquivos utilizados
 
 - `pandas_supremo.ipynb`
 - `vendas_tech.csv`
