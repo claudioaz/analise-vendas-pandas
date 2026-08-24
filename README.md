@@ -1,15 +1,22 @@
-# 📊 Prática de Análise de Dados com Pandas
+#  Prática de Análise de Dados com Pandas
 
 Prática de análise e tratamento de dados de vendas utilizando Python e Pandas.
 
-## 🛠️ Tecnologias
+# Relatório
+Acesse o relatório:
+
+👉 [**Acessar o relatório**](https://claudioaz.github.io/relatorio/)
+
+
+
+##  Tecnologias
 
 - Python
 - Pandas
 - NumPy
 - Jupyter Notebook
 
-## 📚 Conteúdos praticados
+##  Conteúdos praticados
 
 - Importação de dados CSV e Excel
 - Exploração de DataFrames
@@ -22,7 +29,7 @@ Prática de análise e tratamento de dados de vendas utilizando Python e Pandas.
 - Merge entre DataFrames
 - Análise de faturamento e metas
 
-## 📁 Arquivos
+##  Arquivos
 
 - `pandas_supremo.ipynb` — Notebook com as práticas de análise.
 - `vendas_tech.csv` — Base de dados utilizada na análise.
